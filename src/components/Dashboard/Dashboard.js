@@ -508,6 +508,38 @@ function RenderComponent(props){
     )
   
   }
+
+ else if(props.search.split('=')[0] === '?mastertable'){
+    return(
+      <MasterTables search={props.search}/>
+    )
+  
+  }
+  else if(props.search.split('=')[0] === '?createcontract'){
+    return(
+      <CreateServiceList search={props.search}/>
+    )
+  
+  }
+
+  else if(props.search.split('=')[0] === '?doctoravailablity'){
+    return(
+      <DoctorAvailablity search={props.search}/>
+    )
+  
+  }
+  else if(props.search.split('=')[0] === '?allcontract'){
+    return(
+      <AllContract search={props.search}/>
+    )
+  
+  }
+  else if(props.search.split('=')[0] === '?updatecontract'){
+    return(
+      <UpdateContract search={props.search}/>
+    )
+  
+  }
   else if(props.search.split('=')[0] === '?upload-img'){
     return(
       <ImageUpload search = {props.search}/>
