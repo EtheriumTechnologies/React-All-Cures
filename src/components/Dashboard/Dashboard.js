@@ -56,6 +56,13 @@ import CreateServiceList from './DoctorItems/CreateContract';
 import DoctorAvailablity from './DoctorItems/DoctorAvailablity';
 import AllContract from './DoctorItems/AllContract';
 import UpdateContract from './DoctorItems/UpdateContract';
+import AllServicesList from './DoctorItems/AllServicesList';
+import UpdateAllServices from './DoctorItems/UpdateAllServices';
+import AllServicesPaymentList from './DoctorItems/AllServicesPaymentList';
+import UpdatePayment from './DoctorItems/UpdatePayment';
+import FailureReasonList from './DoctorItems/FailureReasonList';
+import UpdateFailureReason from './DoctorItems/UpdateFailureReason';
+
 
 
 
