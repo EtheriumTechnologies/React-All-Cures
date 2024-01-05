@@ -51,6 +51,12 @@ import UpdateCompany from './Campaign/UpdateCompany';
 import UpdateCampaign from './Campaign/UpdateCampaign';
 import UpdateAdvs from './Campaign/UpdateAdvs';
 import CreateWebStories from './CreateWebStories';
+import MasterTables from './DoctorItems/MasterTables';
+import CreateServiceList from './DoctorItems/CreateContract';
+import DoctorAvailablity from './DoctorItems/DoctorAvailablity';
+import AllContract from './DoctorItems/AllContract';
+import UpdateContract from './DoctorItems/UpdateContract';
+
 
 
 
