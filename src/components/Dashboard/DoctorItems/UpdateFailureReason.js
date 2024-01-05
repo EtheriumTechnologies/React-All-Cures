@@ -21,7 +21,7 @@ export default function UpdateFailureReason(props){
     const id = new URLSearchParams(search).get('updatefailurereasonlist');
 
     const fetchPromo = (e) => {
-        axios.get(`${backendHost}/video/get/failure/reasons/${id}`)
+        axios.get(`${backendHost}/video/get/failure/reason/${id}`)
         .then(res => {
             console.log('hhhhh',id)
             setReason(res.data[0].reasons)
