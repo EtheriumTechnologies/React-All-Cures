@@ -62,6 +62,8 @@ import AllServicesPaymentList from './DoctorItems/AllServicesPaymentList';
 import UpdatePayment from './DoctorItems/UpdatePayment';
 import FailureReasonList from './DoctorItems/FailureReasonList';
 import UpdateFailureReason from './DoctorItems/UpdateFailureReason';
+import DoctorAvailibilityList from './DoctorItems/DoctorAvailibilityList';
+import UpdateDoctorAvail from './DoctorItems/UpdateDoctorAvail';
 
 
 
@@ -541,6 +543,20 @@ function RenderComponent(props){
     )
   
   }
+
+ else if(props.search.split('=')[0] === '?doctoravailibilitylist'){
+    return(
+      <DoctorAvailibilityList  search={props.search}/>
+    )
+  
+  } 
+
+  else if(props.search.split('=')[0] === '?updateAvailibilityList'){
+    return(
+      <UpdateDoctorAvail  search={props.search}/>
+    )
+  
+  } 
   else if(props.search.split('=')[0] === '?allcontract'){
     return(
       <AllContract search={props.search}/>
