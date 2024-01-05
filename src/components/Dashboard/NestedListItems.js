@@ -465,6 +465,17 @@ setOpenn(!openn);
            </Link>
     </ListItem>
 
+      <ListItem button>
+            <ListItemIcon>
+              <BarChartIcon />
+            </ListItemIcon>
+            {/* <ListItemText primary="Reports" /> */}
+            <Link to="/dashboard?doctoravailibilitylist">
+              <ListItemText primary="Doctor Availibilty List" />
+            </Link>
+          </ListItem>
+
+
          <ListItem button>
             <ListItemIcon>
               <BarChartIcon />
