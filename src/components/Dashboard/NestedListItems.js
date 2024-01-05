@@ -465,6 +465,37 @@ setOpenn(!openn);
            </Link>
     </ListItem>
 
+         <ListItem button>
+            <ListItemIcon>
+              <BarChartIcon />
+            </ListItemIcon>
+            {/* <ListItemText primary="Reports" /> */}
+            <Link to="/dashboard?allserviceslist">
+              <ListItemText primary=" Sponsored Services" />
+            </Link>
+          </ListItem>
+
+              
+          <ListItem button>
+            <ListItemIcon>
+              <BarChartIcon />
+            </ListItemIcon>
+            {/* <ListItemText primary="Reports" /> */}
+            <Link to="/dashboard?allservicespaymentlist">
+              <ListItemText primary="Payment List" />
+            </Link>
+          </ListItem>
+
+                <ListItem button>
+            <ListItemIcon>
+              <BarChartIcon />
+            </ListItemIcon>
+            {/* <ListItemText primary="Reports" /> */}
+            <Link to="/dashboard?failurereasonlist">
+              <ListItemText primary="Failure List" />
+            </Link>
+          </ListItem>
+
         </List>
       </Collapse>
       
