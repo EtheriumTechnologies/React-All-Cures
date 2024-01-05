@@ -33,6 +33,7 @@ export default function NestedListItems() {
   const [opennn, setOpennn] = React.useState(false);
   const [opennnn, setOpennnn] = React.useState(false);
   const [opennnnn, setOpennnnn] = React.useState(false);
+ const [opens, setOpens] = React.useState(false);
 
   const [openx, setOpenx] = React.useState(false);
   const handleClick4 = () => {
@@ -53,6 +54,9 @@ setOpenn(!openn);
   };
   const handleClick5 = () => {
     setOpennnnn(!opennnnn);
+  };
+   const handleClick6 = () => {
+    setOpens(!opens);
   };
 
 
@@ -412,6 +416,57 @@ setOpenn(!openn);
           <ListItemText primary="Create Webstories" />
         </Link>
       </ListItem>
+
+                 <ListItem button onClick={handleClick6} style={{backgroundColor:'lightblue'}}>
+      <ListItemIcon>
+              <LocalHospitalIcon />
+            </ListItemIcon>
+        <ListItemText primary="VIDEO CHAT " />
+        {opens ? <ExpandLess /> : <ExpandMore />}
+      </ListItem>
+      <Collapse in={opens} timeout="auto" >
+        <List component="divw" disablePadding>
+        <ListItem button>
+      <ListItemIcon>
+        <InfoIcon />
+      </ListItemIcon>
+      {/* <ListItemText primary="Customers"  /> */}
+    <Link to="/dashboard?mastertable">
+    <ListItemText primary=" Create Master Table" />
+           </Link>
+    </ListItem>
+ 
+    <ListItem button>
+      <ListItemIcon>
+        <InfoIcon />
+      </ListItemIcon>
+      {/* <ListItemText primary="Customers"  /> */}
+    <Link to="/dashboard?createcontract">
+    <ListItemText primary="Create Contract" />
+           </Link>
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+        <InfoIcon />
+      </ListItemIcon>
+      {/* <ListItemText primary="Customers"  /> */}
+    <Link to="/dashboard?allcontract">
+    <ListItemText primary="All Contract" />
+           </Link>
+    </ListItem>
+   
+    <ListItem button>
+      <ListItemIcon>
+        <InfoIcon />
+      </ListItemIcon>
+      {/* <ListItemText primary="Customers"  /> */}
+    <Link to="/dashboard?doctoravailablity">
+    <ListItemText primary="Doctor Availablity" />
+           </Link>
+    </ListItem>
+
+        </List>
+      </Collapse>
       
     </List>
   );
